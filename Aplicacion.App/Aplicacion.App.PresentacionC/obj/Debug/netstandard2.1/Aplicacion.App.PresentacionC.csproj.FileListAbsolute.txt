@@ -1,0 +1,14 @@
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.PresentacionC.deps.json
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.PresentacionC.dll
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.PresentacionC.pdb
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.dll
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.Persistencia.dll
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.Persistencia.pdb
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.pdb
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.csprojAssemblyReference.cache
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.AssemblyInfoInputs.cache
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.AssemblyInfo.cs
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.csproj.CoreCompileInputs.cache
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.csproj.CopyComplete
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.dll
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.PresentacionC\obj\Debug\netstandard2.1\Aplicacion.App.PresentacionC.pdb
