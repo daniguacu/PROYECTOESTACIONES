@@ -8,19 +8,19 @@
     ".NETCoreApp,Version=v3.1": []
   },
   "packageFolders": {
-    "C:\\Users\\mshec\\.nuget\\packages\\": {}
+    "C:\\Users\\Andresmed\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\FrontEnd.csproj",
+      "projectUniqueName": "C:\\Users\\Andresmed\\Documents\\GitHub\\PROYECTOESTACIONES\\frontend\\FrontEnd.csproj",
       "projectName": "FrontEnd",
-      "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\FrontEnd.csproj",
-      "packagesPath": "C:\\Users\\mshec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\obj\\",
+      "projectPath": "C:\\Users\\Andresmed\\Documents\\GitHub\\PROYECTOESTACIONES\\frontend\\FrontEnd.csproj",
+      "packagesPath": "C:\\Users\\Andresmed\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Andresmed\\Documents\\GitHub\\PROYECTOESTACIONES\\frontend\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\mshec\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Andresmed\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -30,7 +30,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -42,7 +41,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "imports": [
           "net461",
           "net462",
@@ -53,12 +51,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.19, 3.1.19]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -67,7 +59,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.412\\RuntimeIdentifierGraph.json"
       }
     }
   }
