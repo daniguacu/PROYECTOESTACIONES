@@ -12,7 +12,6 @@
     <meta name="generator" content="Hugo 0.88.1">
     <title>Signin Template · Bootstrap v5.1</title>
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/5.1/examples/sign-in/">
 
     
 
@@ -28,7 +27,7 @@
         user-select: none;
       }
 
-      }
+  
     </style>
 
     
@@ -39,20 +38,38 @@
     
 <main class="form-signin">
   <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
     <h1 class="h3 mb-3 fw-normal">Buscar estacion por código</h1>
-
-        <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
+    <div class="form-floating">
+      <input type="Código" class="form-control" id="floatingPassword" placeholder="Código">
       <label for="floatingPassword">código</label>
     </div>
 
-   <button class="w-100 btn btn-lg btn-primary" type="submit">Buscar</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
-  </form>
+   <button class="w-80 btn btn-lg btn-primary" type="submit">Buscar</button>
+       <div class="col-12">
+              <label for="ID" class="form-label">ID</label>
+              <input type="text" class="form-control" id="ID" placeholder="ID" required>
+          </div>  
+       <div class="col-12">
+              <label for="Municipio" class="form-label">Municipio</label>
+              <input type="text" class="form-control" id="Municipio" placeholder="Municipio" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+      <div class="col-12">
+              <label for="Latitud" class="form-label">Latitud</label>
+              <input type="text" class="form-control" id="Latitud" placeholder="4.0000" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>
+      <div class="col-12">
+              <label for="Longitud" class="form-label">Longitud</label>
+              <input type="text" class="form-control" id="Longitud" placeholder="75.0000" required>
+              <div class="invalid-feedback">
+                Please enter your shipping address.
+              </div>   
+   <button class="w-80 btn btn-lg btn-primary" type="submit">Editar</button>
+       <div class="col-16">     
+</form>
 </main>
-
-
-    
-  </body>
+</body>
 </html>
