@@ -1,0 +1,38 @@
+@page
+@model FrontEnd.Pages.CrearEstModel
+@{
+}
+ <h1>NUEVA ESTACION METEREOLOGICA</h1>
+
+ <br>
+   
+  <div class="col-md-4 order-md-6 mb-4">
+  <p class="mb-3">Código Nueva Estacion <input type="text" name=" CodEst"></p>
+
+
+   <div class="row">
+      <div class="col-md-6 mb-3">
+       <label for="Latitud">Latitud</label>
+       <input type="text" name="Latitud" value="" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="Longitud">Longitud</label>
+         <input type="text" name="Longitud" value="" required>
+        </div> 
+      <div class="col-md-6 mb-3">
+       <label for="Municipio"> Municipio</label>
+       <input type="text" name="Municipio" value="" required>
+      </div>
+      <div class="col-md-6 mb-3">
+        <label for="Fecha">Fecha</label>
+         <input type="Date" name="Fecha" value="" required>
+        </div>
+     <div class="col-md-6 mb-3">
+       <label for="Tecnico">Tecnico de Mantenimiento</label>
+       <input type="text" name="Tecnico de Mantenimiento" value=""required>
+      </div>
+
+     <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+     <button class="btn btn-primary btn-lg btn-block" type="submit">Eliminar</button>
+    </div>
+  </div>
