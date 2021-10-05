@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\FrontEnd.csproj": {}
+    "C:\\Users\\Daniela Guzman\\Documents\\GitHub\\PROYECTOESTACIONES\\Frontend\\FrontEnd.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\FrontEnd.csproj": {
+    "C:\\Users\\Daniela Guzman\\Documents\\GitHub\\PROYECTOESTACIONES\\Frontend\\FrontEnd.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\FrontEnd.csproj",
+        "projectUniqueName": "C:\\Users\\Daniela Guzman\\Documents\\GitHub\\PROYECTOESTACIONES\\Frontend\\FrontEnd.csproj",
         "projectName": "FrontEnd",
-        "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\FrontEnd.csproj",
-        "packagesPath": "C:\\Users\\mshec\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\FrontEnd\\obj\\",
+        "projectPath": "C:\\Users\\Daniela Guzman\\Documents\\GitHub\\PROYECTOESTACIONES\\Frontend\\FrontEnd.csproj",
+        "packagesPath": "C:\\Users\\Daniela Guzman\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Daniela Guzman\\Documents\\GitHub\\PROYECTOESTACIONES\\Frontend\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mshec\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Daniela Guzman\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,7 +24,6 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -36,7 +35,6 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "imports": [
             "net461",
             "net462",
@@ -47,12 +45,6 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.19, 3.1.19]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -61,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
         }
       }
     }

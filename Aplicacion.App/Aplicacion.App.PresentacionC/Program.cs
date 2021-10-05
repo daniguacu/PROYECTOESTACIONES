@@ -1,29 +1,28 @@
 ﻿using System;
 using Aplicacion.App.Dominio;
 using Aplicacion.App.Persistencia;
-
 namespace Aplicacion.App.PresentacionC
 {
     class Program
     {
-        private static IRepositorioPersona _repoPersona = new RepositorioPersona(new Persistencia.AppContext());
+        private static IRepositorioDataMeteorologico _repodatos= new RepositorioDataMeteorologico(new Persistencia.AppContext());
         static void Main(string[] args)
         {
-            Console.WriteLine("Inicio de Pruebas!");
-            InsertarPersona();
-            Console.WriteLine("Persona Agragada");
+            Console.WriteLine("inicio de pruebas!");
+            AddDato();
+            Console.WriteLine("ok");
         }
 
-        private static void InsertarPersona() {
-            var p = new Persona
+        private static void AddDato())
+        {
+            var p=new DataMeteorologico
             {
-                Identificacion = "2464",
-                Nombre = "Jose",
-                Apellido = "SQL",
-                Genero = "M",
-                Estado = 'L'
+                Id="9252",
+                Valor="356",
+                TipoDato="[1,2,3,4]"
             };
-            _repoPersona.AddPersona(p);
+            _repodatos.AddDato(p);
         }
     }
 }
+
