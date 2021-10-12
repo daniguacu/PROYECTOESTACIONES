@@ -7,6 +7,7 @@ namespace Aplicacion.App.PresentacionC
     class Program
     {
         private static IRepositorioPersona _repoPersona = new RepositorioPersona(new Persistencia.AppContext());
+        private static IRepositorioDataMeteorologico _repodatos= new RepositorioDataMeteorologico(new Persistencia.AppContext());
         static void Main(string[] args)
         {
             Console.WriteLine("Inicio de Pruebas!");
@@ -25,5 +26,16 @@ namespace Aplicacion.App.PresentacionC
             };
             _repoPersona.AddPersona(p);
         }
+        private static void InsertarDato()
+        {
+            var p=new DataMeteorologico{
+           FechaDato=DateTime.Today,
+            Valor=356
+            //TipoDato=Enum.GetName(typeof(MyType),MyType.humedad)
+                        
+            };
+            
+            _repodatos.AddDato(p);
+        }   
     }
 }

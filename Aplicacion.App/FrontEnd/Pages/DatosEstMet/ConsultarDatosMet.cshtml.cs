@@ -6,21 +6,23 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Aplicacion.App.Dominio;
 using Aplicacion.App.Persistencia;
-
+using System.Text.RegularExpressions;
 namespace FrontEnd.Pages
 {
-    public class IngrDatosMetModel : PageModel
+    public class ConsultarDatosMetModel : PageModel
     {
-       public static DataMeteorologico datometeorologico=new DataMeteorologico();
-       public static IRepositorioEstacion estacionm=new RepositorioEstacion(new Aplicacion.App.Persistencia.AppContext());
+      
+      
         public static IRepositorioDataMeteorologico _repodatos=new RepositorioDataMeteorologico(new Aplicacion.App.Persistencia.AppContext());
         public void OnGet()
         {
         }
-        public void OnPost(DataMeteorologico datometeorologico)
+        public void OnPost(int iddato)
         {
+            var dato=new DataMeteorologico();
             //if (estacionm.GetEstacion(identEst)!=null){
-                _repodatos.AddDato(datometeorologico);
+                dato.Id=iddato;
+                _repodatos.GetDato(dato.Id);
 
             //}
             

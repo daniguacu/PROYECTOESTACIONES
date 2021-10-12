@@ -7,6 +7,7 @@ namespace Aplicacion.App.Persistencia
     {
         public DbSet<Dominio.Persona> Personas{get;set;}
         public DbSet<Dominio.Estacion> Estaciones{get;set;}
+        public DbSet<DataMeteorologico> DatoMeteorologico{get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             if (!optionsBuilder.IsConfigured) {

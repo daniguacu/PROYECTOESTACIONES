@@ -14,6 +14,7 @@ namespace FrontEnd
     public class Program
     {
         private static IRepositorioPersona _repoPersona = new RepositorioPersona(new Aplicacion.App.Persistencia.AppContext());
+        private static IRepositorioDataMeteorologico _repodatos= new RepositorioDataMeteorologico(new Aplicacion.App.Persistencia.AppContext());
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
@@ -33,6 +34,17 @@ namespace FrontEnd
                 Estado = 'A'
             };
             _repoPersona.AddPersona(p);
+        }
+         private static void InsertarDato()
+        {
+            var p=new DataMeteorologico
+            {
+               
+                FechaDato=DateTime.Today,
+                Valor=352
+                //TipoDato=Enum.GetName(typeof(MyType),MyType.humedad)
+            };
+            _repodatos.AddDato(p);
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

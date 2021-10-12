@@ -1,8 +1,24 @@
 ﻿@page
 @model FrontEnd.Pages.IngrDatosMetModel
-@{
-    ViewData["Title"] = "Ingresar Datos";
-}
-<h1>@ViewData["Title"]</h1>
 
-<a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+@{
+    ViewData["Title"] = "Ingreso de Datos Meteorologicos";
+}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Ingreso los Datos Meteorologicos</p>
+</div>
+
+<form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p><label>INGRESE CODIGO DE LA ESTACION </label> <input type="text" id="identEst" class="form-control" name="estacion.Codigo"></p>
+    <p><label>INGRESE VALOR </label> <input type="text" id="valorDato" class="form-control"  name="datometeorologico.Valor"></p>
+    <p> FECHA </label> <input type="datetime" id="fechaDato" class="form-control" name="datometeorologico.FechaDato"></p>
+    <p> TIPO DE DATO </label> <input type="text" id="tipoDato" class="form-control" name="datometeorologico.TipoDato"></p>
+     
+    
+    
+    
+    <input type="submit"class="w-100 btn btn-lg btn-outline-primary" value="Registrar">
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+</form>
