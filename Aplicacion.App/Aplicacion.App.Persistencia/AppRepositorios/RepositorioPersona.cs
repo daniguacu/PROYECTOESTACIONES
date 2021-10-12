@@ -18,6 +18,7 @@ namespace Aplicacion.App.Persistencia
         {
             var personaAdicionada = _appContext.Personas.Add(persona);  
             _appContext.SaveChanges();
+            Console.WriteLine("\n[AddPersona] > Completed");
             return personaAdicionada.Entity;
         }
         

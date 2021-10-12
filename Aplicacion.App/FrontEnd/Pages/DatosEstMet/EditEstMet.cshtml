@@ -1,0 +1,72 @@
+﻿@page
+@model FrontEnd.Pages.EditEstMetModel
+@{
+    ViewData["Title"] = "Editar Estación Meteorológica";
+}
+
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Actualiza los datos de la Estación</p>
+</div>
+
+<form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p>
+        <label>Código</label>
+        <input type="text" id="estacionCodigo" class="form-control" value="" name="estacion.Codigo" required>
+    </p>
+    <p>
+        <label>Municipio</label>
+        <input type="text" id="estacionMunicipio" class="form-control" value="" name="estacion.Municipio" required>
+    </p>
+    <p>
+        <label>Latitud</label>
+        <input type="text" id="estacionLatitud" class="form-control" value="" name="estacion.Latitud" required>
+    </p>
+    <p>
+        <label>Longitud</label>
+        <input type="text" id="estacionLongitud" class="form-control" value="" name="estacion.Longitud" required>
+    </p>
+    <p>
+        <label>Fecha de montaje</label>
+        <input type="datetime-local" id="estacionFechaMontaje" class="form-control" value=""
+            name="estacion.FechaMontaje" required>
+    </p>
+
+    <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Actualizar">
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+</form>
+
+
+
+
+@* <form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p>
+    <label>Código</label>
+    <input type="text" id="estacionCodigo" class="form-control" value="@Request.Form["estacionCodigo"]"
+    name="estacionCodigo" required>
+    </p>
+    <p>
+    <label>Municipio</label>
+    <input type="text" id="estacionMunicipio" class="form-control" value="@Request.Form["estacionMunicipio"]"
+    name="estacionMunicipio" required>
+    </p>
+    <p>
+    <label>Latitud</label>
+    <input type="text" id="estacionLatitud" class="form-control" value="@Request.Form["estacionLatitud"]"
+    name="estacionLatitud" required>
+    </p>
+    <p>
+    <label>Longitud</label>
+    <input type="text" id="estacionLongitud" class="form-control" value="@Request.Form["estacionLongitud"]"
+    name="estacionLongitud" required>
+    </p>
+    <p>
+    <label>Fecha de montaje</label>
+    <input type="datetime-local" id="estacionFechaMontaje" class="form-control"
+    value="@Request.Form["estacionFechaMontaje"]" name="estacionFechaMontaje" required>
+    </p>
+
+    <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Actualizar">
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+    </form> *@

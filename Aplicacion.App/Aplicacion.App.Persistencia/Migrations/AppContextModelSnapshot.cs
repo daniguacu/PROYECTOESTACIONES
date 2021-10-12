@@ -19,32 +19,6 @@ namespace Aplicacion.App.Persistencia.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("ProductVersion", "5.0.0");
 
-            modelBuilder.Entity("Aplicacion.App.Dominio.DataMeteorologico", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<int?>("EstacionId")
-                        .HasColumnType("int");
-
-                    b.Property<DateTime>("FechaDato")
-                        .HasColumnType("datetime2");
-
-                    b.Property<int>("TipoDato")
-                        .HasColumnType("int");
-
-                    b.Property<float>("Valor")
-                        .HasColumnType("real");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("EstacionId");
-
-                    b.ToTable("DataMeteorologico");
-                });
-
             modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>
                 {
                     b.Property<int>("Id")
@@ -58,7 +32,7 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Property<DateTime>("FechaMontaje")
                         .HasColumnType("datetime2");
 
-                    b.Property<float>("Latitutd")
+                    b.Property<float>("Latitud")
                         .HasColumnType("real");
 
                     b.Property<float>("Longitud")
@@ -67,17 +41,7 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Property<string>("Municipio")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("ReporteId")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("TecnicoId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("ReporteId");
-
-                    b.HasIndex("TecnicoId");
 
                     b.ToTable("Estaciones");
                 });
@@ -90,10 +54,6 @@ namespace Aplicacion.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("Apellido")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Estado")
@@ -112,57 +72,6 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Personas");
-
-                    b.HasDiscriminator<string>("Discriminator").HasValue("Persona");
-                });
-
-            modelBuilder.Entity("Aplicacion.App.Dominio.Reporte", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .UseIdentityColumn();
-
-                    b.Property<string>("Descripcion")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.ToTable("Reporte");
-                });
-
-            modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>
-                {
-                    b.HasBaseType("Aplicacion.App.Dominio.Persona");
-
-                    b.HasDiscriminator().HasValue("TecnicoMantenimiento");
-                });
-
-            modelBuilder.Entity("Aplicacion.App.Dominio.DataMeteorologico", b =>
-                {
-                    b.HasOne("Aplicacion.App.Dominio.Estacion", null)
-                        .WithMany("DatosMeteorologicos")
-                        .HasForeignKey("EstacionId");
-                });
-
-            modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>
-                {
-                    b.HasOne("Aplicacion.App.Dominio.Reporte", "Reporte")
-                        .WithMany()
-                        .HasForeignKey("ReporteId");
-
-                    b.HasOne("Aplicacion.App.Dominio.TecnicoMantenimiento", "Tecnico")
-                        .WithMany()
-                        .HasForeignKey("TecnicoId");
-
-                    b.Navigation("Reporte");
-
-                    b.Navigation("Tecnico");
-                });
-
-            modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>
-                {
-                    b.Navigation("DatosMeteorologicos");
                 });
 #pragma warning restore 612, 618
         }

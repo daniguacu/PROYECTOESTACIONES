@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "aMe0c6f27V0Evye731rjlG2rjcmFgq/UiO3Wq9B783hdUgfgUuNNUvhhABnakdfSJ3KFgpB7ONCCb0ICecpDuQ==",
+  "dgSpecHash": "ZJUsOXIVOLc0TlpE1TeBYC4QCuX3WVEpANtrTCwn/fzkbyXEXMouSfft93iitwYfRhhKUAnvLXefPsWALXivkg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+  "projectFilePath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\mshec\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\mshec\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

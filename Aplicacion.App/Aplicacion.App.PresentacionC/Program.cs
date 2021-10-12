@@ -10,7 +10,7 @@ namespace Aplicacion.App.PresentacionC
         static void Main(string[] args)
         {
             Console.WriteLine("Inicio de Pruebas!");
-            InsertarPersona();
+            //InsertarPersona();
             Console.WriteLine("Persona Agragada");
         }
 

@@ -8,3 +8,13 @@ C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Ap
 C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.pdb
 C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.csproj.AssemblyReference.cache
 C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\AppInicial\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.deps.json
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.dll
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\bin\Debug\netstandard2.1\Aplicacion.App.Dominio.pdb
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.AssemblyInfo.cs
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.dll
+C:\Users\mshec\OneDrive\Escritorio\Projects\C_Sharp\Integracion\Aplicacion.App\Aplicacion.App.Dominio\obj\Debug\netstandard2.1\Aplicacion.App.Dominio.pdb

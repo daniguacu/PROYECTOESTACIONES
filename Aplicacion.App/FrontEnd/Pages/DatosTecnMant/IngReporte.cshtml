@@ -1,0 +1,78 @@
+﻿@page
+@model FrontEnd.Pages.IngReporteModel
+@{
+    ViewData["Title"] = "Ingresar Reporte";
+}
+
+
+<body class="bg-light">
+    <div class="container">
+        <div class="py-5 text-center">
+            <h1 class="display-4">@ViewData["Title"]</h1>
+            <img class="mb-4" src="~/media/reporte.png" style="border-radius: 22%" alt="" width="72" height="72">
+            <p class="lead">Aquí ingresaras el tipo de reporte, el ID y la descripción del trabajo realizado.</p>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 order-md-1">
+                <h4 class="mb-3">Ingresar Reporte</h4>
+                <form class="needs-validation" novalidate>
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="firstName">ID del reporte</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                            <div class="invalid-feedback">
+                                Valid first name is required.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="username">Descripción</label>
+                        <div class="input-group">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"></span>
+                            </div>
+                            <input type="text" class="form-control" id="username" placeholder="Trabajo realizado"
+                                required>
+                            <div class="invalid-feedback" style="width: 100%;">
+                                se necesita la descripcion.
+                            </div>
+                        </div>
+                    </div>
+
+                    <h4 class="mb-3">Tipo de Reporte</h4>
+                    <div class="d-block my-3">
+                        <div class="custom-control custom-radio">
+                            <input id="credit" name="paymentMethod" type="radio" class="custom-control-input" checked
+                                required>
+                            <label class="custom-control-label" for="credit">Mantenimiento Preventivo</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="debit" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="debit">Mantenimiento Correctivo</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="paypal" name="paymentMethod" type="radio" class="custom-control-input" required>
+                            <label class="custom-control-label" for="paypal">Instalación</label>
+                        </div>
+                    </div>
+
+                    <hr class="mb-4">
+                    <div class="container" style="padding: 0px">
+                        <div class="row" style="gap: 10px">
+                            <div class="col-sm">
+                                <button class="btn btn-outline-primary btn-lg btn-block" asp-area=""
+                                    asp-page="./TecnMant">Cancelar</button>
+                            </div>
+                            <div class="col-sm">
+                                <button class="btn btn-primary btn-lg btn-block" type="submit">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    @* <script src="form-validation.js"></script> *@
+</body>

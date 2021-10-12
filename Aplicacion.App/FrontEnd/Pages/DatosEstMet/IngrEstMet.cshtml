@@ -1,0 +1,24 @@
+﻿@page
+@model FrontEnd.Pages.IngrEstMetModel
+@{
+    ViewData["Title"] = "Crear Estación Meteorológica";
+}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Ingreso los datos de la nueva Estación</p>
+</div>
+
+<form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p><label>Código</label><input type="text" id="estacionCodigo" class="form-control" name="estacion.Codigo"></p>
+    <p><label>Municipio</label><input type="text" id="estacionMunicipio" class="form-control" name="estacion.Municipio">
+    </p>
+    <p><label>Latitud</label><input type="text" id="estacionLatitud" class="form-control" name="estacion.Latitud"></p>
+    <p><label>Longitud</label><input type="text" id="estacionLongitud" class="form-control" name="estacion.Longitud">
+    </p>
+    <p><label>Fecha de montaje</label><input type="datetime-local" id="estacionFechaMontaje" class="form-control"
+            name="estacion.FechaMontaje"></p>
+
+    <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Crear">
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+</form>

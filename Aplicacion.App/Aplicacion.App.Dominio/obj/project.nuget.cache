@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "P90BNSLVmutxkSoHCLP/iKid1i6jMThS7+ceDVOzl6DcKRTixj7ldF3rbYFbzXSWsEeuXUwFrDkePVK60q1WFg==",
+  "dgSpecHash": "7su6HhkKpyybM4HaloLWcl087n9v89FdXHJWAHf/mto7zgh6rgAHU29HmkedkFJfY1GNHjh5H3VGeVA0h1QS7A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
+  "projectFilePath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

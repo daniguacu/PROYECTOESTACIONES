@@ -5801,11 +5801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.PresentacionC\\Aplicacion.App.PresentacionC.csproj",
+      "projectUniqueName": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.PresentacionC\\Aplicacion.App.PresentacionC.csproj",
       "projectName": "Aplicacion.App.PresentacionC",
-      "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.PresentacionC\\Aplicacion.App.PresentacionC.csproj",
+      "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.PresentacionC\\Aplicacion.App.PresentacionC.csproj",
       "packagesPath": "C:\\Users\\mshec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.PresentacionC\\obj\\",
+      "outputPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.PresentacionC\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mshec\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5820,8 +5820,8 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj": {
-              "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj"
+            "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj": {
+              "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj"
             }
           }
         }

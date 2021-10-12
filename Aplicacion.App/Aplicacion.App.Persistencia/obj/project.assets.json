@@ -7268,11 +7268,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+      "projectUniqueName": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
       "projectName": "Aplicacion.App.Persistencia",
-      "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
+      "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Persistencia\\Aplicacion.App.Persistencia.csproj",
       "packagesPath": "C:\\Users\\mshec\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Persistencia\\obj\\",
+      "outputPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Persistencia\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\mshec\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -7287,8 +7287,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\AppInicial\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj"
+            "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj": {
+              "projectPath": "C:\\Users\\mshec\\OneDrive\\Escritorio\\Projects\\C_Sharp\\Integracion\\Aplicacion.App\\Aplicacion.App.Dominio\\Aplicacion.App.Dominio.csproj"
             }
           }
         }

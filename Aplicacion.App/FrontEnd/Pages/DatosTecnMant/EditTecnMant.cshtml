@@ -1,0 +1,39 @@
+﻿@page
+@model FrontEnd.Pages.EditTecnMantModel
+@{
+    ViewData["Title"] = "Editar Instancia de Técnico";
+}
+
+
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Actualiza los datos del Perfil de Usuario</p>
+</div>
+
+<form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p><label>Identificación</label><input type="text" id="idTecMant" class="form-control" name="persona.Identificacion"></p>
+    <p><label>Nombre(s)</label><input type="text" id="nombreTecMant" class="form-control" name="persona.Nombre"></p>
+    <p><label>Apellido(s)</label><input type="text" id="apellidoTecMant" class="form-control" name="persona.Apellido"></p>
+    <p><label>Genero</label>
+        <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+            name="persona.Genero">
+            <option selected>Seleccionar</option>
+            <option value="Hombre">Hombre</option>
+            <option value="Mujer">Mujer</option>
+            <option value="Otro">Otro</option>
+        </select>
+    </p>
+    <p><label>Estado de la cuenta</label>
+        <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example"
+            name="persona.Estado">
+            <option selected>Seleccionar</option>
+            <option value="A">Activo</option>
+            <option value="I">Inactivo</option>
+            <option value="L">Lead</option>
+        </select>
+    </p>
+
+    <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Actualizar">
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./TecnMant">Regresar</a>
+</form>
