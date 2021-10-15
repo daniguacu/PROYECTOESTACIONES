@@ -1,5 +1,5 @@
-﻿@page
-@model FrontEnd.Pages.IngrDatosMetModel
+@page
+@model FrontEnd.Pages.IngresarDatosModel
 
 @{
     ViewData["Title"] = "Ingreso de Datos Meteorologicos";
@@ -10,13 +10,13 @@
     <p class="lead">Ingreso los Datos Meteorologicos</p>
 </div>
 
+<h1>@Model.numero</h1>
+
 <form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
-    <p><label>INGRESE CODIGO DE LA ESTACION </label> <input asp-for="@Model.estacion.Codigo" id="identEst" class="form-control" placeholder="IDENT CONSULTA" ></p>
+    <p><label>INGRESE VALOR </label> <input asp-for="@Model.dato.Valor" id="ValorDato" class="form-control" placeholder="IDENT DATO" ></p>
       
       
     
-    <input type="submit"class="w-100 btn btn-lg btn-outline-primary" value="Consultar"asp-page-handler="Consultar">
+    <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Crear">
     <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
 </form>
-<h1>Estacion Id: </h1>
-<h1>@Model.numero</h1>
