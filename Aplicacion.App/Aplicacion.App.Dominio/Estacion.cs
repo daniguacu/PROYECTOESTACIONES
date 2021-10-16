@@ -11,7 +11,7 @@ namespace Aplicacion.App.Dominio
         public float Latitud{get;set;}
         public float Longitud{get;set;}
         // public TecnicoMantenimiento Tecnico{get;set;}
-        // public List<DataMeteorologico> DatosMeteorologicos{get;set;}
+        public List<DataMeteorologico> DatosMeteorologicos{get;set;}
         // public Reporte Reporte{get;set;}
         public DateTime FechaMontaje{get;set;}
     }

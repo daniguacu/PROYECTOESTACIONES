@@ -27,6 +27,8 @@ namespace Aplicacion.App.Persistencia
             var estacionEncontrada = _appContext.Estaciones.FirstOrDefault(p => p.Codigo == codigoEstacion);
             Console.WriteLine("[Estacion] > Readed");
             return estacionEncontrada;
+            
+             
         }
 
         IEnumerable<Estacion> IRepositorioEstacion.GetAllEstaciones(){
