@@ -12,5 +12,6 @@ namespace Aplicacion.App.Persistencia
         DataMeteorologico UpdateDato(DataMeteorologico dato);
         DataMeteorologico GetDato(int iddato);
         DataMeteorologico DeleteDato(int iddato);
+         
     }
 }

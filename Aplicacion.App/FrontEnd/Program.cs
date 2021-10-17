@@ -41,7 +41,13 @@ namespace FrontEnd
             {
                
                 FechaDato=DateTime.Today,
-                Valor=352
+                Temperatura=356,
+                Humedad=844,
+                PresionAtmosferica=388,
+                VelocidadViento=5,
+                Pluviosidad= 8,
+                RadiacionSolar=9
+                //Valor=352
                 //TipoDato=Enum.GetName(typeof(MyType),MyType.humedad)
             };
             _repodatos.AddDato(p);

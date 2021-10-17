@@ -4,7 +4,8 @@ namespace Aplicacion.App.Dominio
 {
     public class TecnicoMantenimiento:Persona
     {
-        // public string Identificacion{get;set;}
+        public int TarjetaProfesional{get;set;}
+        public Reporte Reporte{get;set;}
         
     }
 }

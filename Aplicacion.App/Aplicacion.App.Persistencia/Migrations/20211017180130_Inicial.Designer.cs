@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aplicacion.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20210921010121_Inicial")]
+    [Migration("20211017180130_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -34,17 +34,29 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Property<DateTime>("FechaDato")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("TipoDato")
-                        .HasColumnType("int");
+                    b.Property<float>("Humedad")
+                        .HasColumnType("real");
 
-                    b.Property<float>("Valor")
+                    b.Property<float>("Pluviosidad")
+                        .HasColumnType("real");
+
+                    b.Property<float>("PresionAtmosferica")
+                        .HasColumnType("real");
+
+                    b.Property<float>("RadiacionSolar")
+                        .HasColumnType("real");
+
+                    b.Property<float>("Temperatura")
+                        .HasColumnType("real");
+
+                    b.Property<float>("VelocidadViento")
                         .HasColumnType("real");
 
                     b.HasKey("Id");
 
                     b.HasIndex("EstacionId");
 
-                    b.ToTable("DataMeteorologico");
+                    b.ToTable("DatoMeteorologico");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>
@@ -60,7 +72,7 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Property<DateTime>("FechaMontaje")
                         .HasColumnType("datetime2");
 
-                    b.Property<float>("Latitutd")
+                    b.Property<float>("Latitud")
                         .HasColumnType("real");
 
                     b.Property<float>("Longitud")
@@ -137,6 +149,14 @@ namespace Aplicacion.App.Persistencia.Migrations
                 {
                     b.HasBaseType("Aplicacion.App.Dominio.Persona");
 
+                    b.Property<int?>("ReporteId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TarjetaProfesional")
+                        .HasColumnType("int");
+
+                    b.HasIndex("ReporteId");
+
                     b.HasDiscriminator().HasValue("TecnicoMantenimiento");
                 });
 
@@ -160,6 +180,15 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.Navigation("Reporte");
 
                     b.Navigation("Tecnico");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>
+                {
+                    b.HasOne("Aplicacion.App.Dominio.Reporte", "Reporte")
+                        .WithMany()
+                        .HasForeignKey("ReporteId");
+
+                    b.Navigation("Reporte");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.Estacion", b =>

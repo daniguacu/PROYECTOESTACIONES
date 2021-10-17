@@ -18,7 +18,7 @@
     </p>
     <p><label>Fecha de montaje</label><input type="datetime-local" id="estacionFechaMontaje" class="form-control"
             name="estacion.FechaMontaje"></p>
-
+     <p><label>Tecnico de Mantenimiento</label><input asp-for="@Model.tecnico.Identificacion" placeholder="identificacion"class="form-control">
     <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Crear">
     <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
 </form>

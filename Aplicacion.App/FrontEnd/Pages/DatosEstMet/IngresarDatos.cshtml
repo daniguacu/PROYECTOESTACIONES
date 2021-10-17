@@ -13,7 +13,13 @@
 <h1>@Model.numero</h1>
 
 <form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
-    <p><label>INGRESE VALOR </label> <input asp-for="@Model.dato.Valor" id="ValorDato" class="form-control" placeholder="IDENT DATO" ></p>
+    <p><label>FECHA</label><input type="datetime-local" asp-for="@Model.dato.FechaDato" id="Fecha" class="form-control" placeholder="Fecha" ></p>
+    <p><label>INGRESE TEMPERATURA </label> <input asp-for="@Model.dato.Temperatura" id="ValorTemperatura" class="form-control" placeholder="Temperatura" ></p>
+    <p><label>INGRESE HUMEDAD </label> <input asp-for="@Model.dato.Humedad" id="ValorHumedad" class="form-control" placeholder="Humedad" ></p>
+    <p><label>INGRESE PRESION ATMOSFÉRICA </label> <input asp-for="@Model.dato.PresionAtmosferica" id="ValorPresion" class="form-control" placeholder="Presion Atmosférica" ></p>
+    <p><label>INGRESE VELOCIDAD DEL VIENTO </label> <input asp-for="@Model.dato.VelocidadViento" id="ValorVelocidad" class="form-control" placeholder="Velocidad del Viento" ></p>
+    <p><label>INGRESE PLUVIOSIDAD </label> <input asp-for="@Model.dato.Pluviosidad" id="ValorPluviosidad" class="form-control" placeholder="Pluviosidad" ></p>
+    <p><label>RADIACION SOLAR</label> <input asp-for="@Model.dato.RadiacionSolar" id="ValorRadiacion" class="form-control" placeholder="Radiacion" ></p>
       
       
     

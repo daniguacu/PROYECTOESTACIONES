@@ -11,16 +11,16 @@ namespace FrontEnd.Pages
 {
     public class EditTecnMantModel : PageModel
     {
-        public static Persona persona = new Persona();
-        public static IRepositorioPersona _repoPersona = new RepositorioPersona(new Aplicacion.App.Persistencia.AppContext());
+        public static TecnicoMantenimiento tecnico = new TecnicoMantenimiento();
+        public static IRepositorioTecnicoMantenimiento _repoTecnico = new RepositorioTecnicoMantenimiento(new Aplicacion.App.Persistencia.AppContext());
 
         public void OnGet()
         {
         }
 
         // POST (corto)
-        public void OnPost(Persona persona){
-            _repoPersona.UpdatePersona(persona);
+        public void OnPost(TecnicoMantenimiento tecnico){
+            _repoTecnico.UpdateTecnicoMantenimiento(tecnico);
         }
     }
 }

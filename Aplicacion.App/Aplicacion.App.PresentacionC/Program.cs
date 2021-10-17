@@ -30,7 +30,12 @@ namespace Aplicacion.App.PresentacionC
         {
             var p=new DataMeteorologico{
            FechaDato=DateTime.Today,
-            Valor=356
+            Temperatura=356,
+            Humedad=844,
+            PresionAtmosferica=388,
+            VelocidadViento=5,
+            Pluviosidad= 8,
+            RadiacionSolar=9
             //TipoDato=Enum.GetName(typeof(MyType),MyType.humedad)
                         
             };

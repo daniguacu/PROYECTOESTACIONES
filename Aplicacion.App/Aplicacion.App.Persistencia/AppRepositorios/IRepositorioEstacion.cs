@@ -12,5 +12,7 @@ namespace Aplicacion.App.Persistencia
         IEnumerable<Estacion> GetAllEstaciones();
         Estacion UpdateEstacion(Estacion estacion);
         Estacion DeleteEstacion(string codigoEstacion);
+        TecnicoMantenimiento AsignarTecnico(string codigoEstacion, TecnicoMantenimiento tecnico); 
+        Reporte AsignarReporte(int idtecnico, Reporte reporte); 
     }
 }

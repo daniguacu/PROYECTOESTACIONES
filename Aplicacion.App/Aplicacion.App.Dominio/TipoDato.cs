@@ -4,11 +4,11 @@ namespace Aplicacion.App.Dominio
 {
     public enum TipoDato
     {
-        Temperatura,
-        Humedad,
-        PresionAtmosferica,
-        VelocidadViento,
-        Pluviosidad,
-        RadiacionSolar
+       // Temperatura,
+        //Humedad,
+        //PresionAtmosferica,
+        //VelocidadViento,
+        //Pluviosidad,
+        //RadiacionSolar
     }
 }

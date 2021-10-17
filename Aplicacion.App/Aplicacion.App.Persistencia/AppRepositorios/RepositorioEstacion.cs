@@ -44,6 +44,8 @@ namespace Aplicacion.App.Persistencia
                 estacionEncontrada.Latitud = estacion.Latitud;
                 estacionEncontrada.Longitud = estacion.Longitud;
                 estacionEncontrada.FechaMontaje = estacion.FechaMontaje;
+                estacionEncontrada.Tecnico=estacion.Tecnico;
+                estacionEncontrada.Reporte=estacion.Reporte;
                 _appContext.SaveChanges();
                 Console.WriteLine("[Estacion] > Updated");
             }
@@ -58,6 +60,38 @@ namespace Aplicacion.App.Persistencia
                 Console.WriteLine("[Estacion] > Deleted");
             }
             return estacionEncontrada;
+        }
+        TecnicoMantenimiento IRepositorioEstacion.AsignarTecnico(string codigoEstacion, TecnicoMantenimiento tecnico)
+        {
+           var estacionEncontrada=_appContext.Estaciones.FirstOrDefault(p=> p.Codigo==codigoEstacion);
+           
+           //ojo con a linea 76 sia isganmos el ecnico drectamente tenemos que usar esta linea 
+           if (estacionEncontrada != null)
+            {
+               
+                estacionEncontrada.Tecnico=tecnico;
+                _appContext.SaveChanges();
+                
+                return tecnico;
+            }
+            return null;
+
+        }
+        Reporte IRepositorioEstacion.AsignarReporte(int idtecnico, Reporte reporte)
+        {
+           var estacionEncontrada=_appContext.Estaciones.FirstOrDefault(p=> p.Tecnico.Id==idtecnico);
+           
+           //ojo con a linea 76 sia isganmos el ecnico drectamente tenemos que usar esta linea 
+           if (estacionEncontrada != null)
+            {
+               
+                estacionEncontrada.Reporte=reporte;
+                _appContext.SaveChanges();
+                
+                return reporte;
+            }
+            return null;
+
         }
     }
 }

@@ -36,9 +36,15 @@ namespace Aplicacion.App.Persistencia
             var datoEncontrada = _appContext.DatoMeteorologico.FirstOrDefault(p => p.Id == dato.Id);
             if (datoEncontrada != null) {
                 //personaEncontrada.Identificacion = persona.Identificacion
-                datoEncontrada.Valor = dato.Valor;
+                datoEncontrada.Temperatura = dato.Temperatura;
+                datoEncontrada.Humedad = dato.Humedad;
+                datoEncontrada.PresionAtmosferica = dato.PresionAtmosferica;
+                datoEncontrada.VelocidadViento = dato.VelocidadViento;
+                datoEncontrada.Pluviosidad = dato.Pluviosidad;
+                datoEncontrada.RadiacionSolar = dato.RadiacionSolar;
                 //datoEncontrada.TipoDato = dato.TipoDato;
                 datoEncontrada.FechaDato = dato.FechaDato;
+                //datoEncontrada.EstacionId=dato.EstacionId;
                 
                 _appContext.SaveChanges();
             }
@@ -53,5 +59,6 @@ namespace Aplicacion.App.Persistencia
             }
             return personaEncontrada;
         }
+       
     }
 }
