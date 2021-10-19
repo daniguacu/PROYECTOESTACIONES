@@ -30,9 +30,9 @@ namespace FrontEnd.Pages
         }
         public void OnPost(){
             
-            estacion=_repoEstacion.GetEstacion(codigo);
-             _repodato.AddDato(dato);
             
+             _repodato.AddDato(dato);
+            _repoEstacion.AsignarDato(estacion.Codigo,dato);
            
             
         }

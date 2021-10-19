@@ -13,6 +13,7 @@ namespace Aplicacion.App.Persistencia
         Estacion UpdateEstacion(Estacion estacion);
         Estacion DeleteEstacion(string codigoEstacion);
         TecnicoMantenimiento AsignarTecnico(string codigoEstacion, TecnicoMantenimiento tecnico); 
-        Reporte AsignarReporte(int idtecnico, Reporte reporte); 
+        Reporte AsignarReporte(int idtecnico, Reporte reporte);
+        void AsignarDato(string codigoEstacion,DataMeteorologico dato); 
     }
 }

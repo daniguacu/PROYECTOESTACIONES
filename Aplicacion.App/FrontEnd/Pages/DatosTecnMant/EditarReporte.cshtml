@@ -1,0 +1,26 @@
+@page
+@model FrontEnd.Pages.EditarReporteMetModel
+@{
+    ViewData["Title"] = "Editar Reporte";
+}
+
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Actualiza los datos de un Reporte</p>
+</div>
+
+<form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p>
+        <label>Id Reporte</label>
+        <input type="text" asp-for="@Model.reporte.Id"id="ReporteID" class="form-control" placeholder="id Reporte" >
+    </p>
+    <p>
+        <label>Descripcion</label>
+        <input type="text" asp-for="@Model.reporte.Descripcion"id="estacionMunicipio" class="form-control" placeholder="Municipio" >
+    </p>
+   
+
+    <input type="submit" class="w-100 btn btn-lg btn-outline-primary" value="Actualizar">
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+</form>

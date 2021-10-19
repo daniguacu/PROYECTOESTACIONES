@@ -13,6 +13,7 @@
 <h1>@Model.numero</h1>
 
 <form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p><label>CODIGO DE LA ESTACION</label><input type="text" asp-for="@Model.estacion.Codigo" id="Fecha" class="form-control" placeholder="Codigo Estacion" ></p>
     <p><label>FECHA</label><input type="datetime-local" asp-for="@Model.dato.FechaDato" id="Fecha" class="form-control" placeholder="Fecha" ></p>
     <p><label>INGRESE TEMPERATURA </label> <input asp-for="@Model.dato.Temperatura" id="ValorTemperatura" class="form-control" placeholder="Temperatura" ></p>
     <p><label>INGRESE HUMEDAD </label> <input asp-for="@Model.dato.Humedad" id="ValorHumedad" class="form-control" placeholder="Humedad" ></p>

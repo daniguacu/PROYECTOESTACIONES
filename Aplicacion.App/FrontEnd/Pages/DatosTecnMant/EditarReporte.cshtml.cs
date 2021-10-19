@@ -8,10 +8,10 @@ using Aplicacion.App.Dominio;
 using Aplicacion.App.Persistencia;
 namespace FrontEnd.Pages
 {
-    public class EditEstMetModel : PageModel
+    public class EditarReporteMetModel : PageModel
     {
         [BindProperty]
-        public Estacion estacion{get;set;}
+        public Reporte reporte{get;set;}
        // [TempData]
 
         //public string codigo{get;set;}
@@ -19,16 +19,16 @@ namespace FrontEnd.Pages
 
         public int numero{get;set;}
         //public static Persona persona=new Persona();
-    public static IRepositorioEstacion _repoEstacion=new RepositorioEstacion(new Aplicacion.App.Persistencia.AppContext());
+    public static IRepositorioReporte _repoReporte=new RepositorioReporte(new Aplicacion.App.Persistencia.AppContext());
         public void OnGet()
         {
         }
         public void OnPost()
         {
-            estacion=_repoEstacion.GetEstacion(estacion.Codigo);
-            numero=estacion.Id;
+            reporte=_repoReporte.GetReporte(reporte.Id);
+            numero=reporte.Id;
             if(numero!=0){
-            _repoEstacion.UpdateEstacion(estacion);
+            _repoReporte.UpdateReporte(reporte);
             }
         }
         

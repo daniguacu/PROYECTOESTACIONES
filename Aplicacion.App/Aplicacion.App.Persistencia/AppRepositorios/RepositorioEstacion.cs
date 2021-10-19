@@ -93,5 +93,20 @@ namespace Aplicacion.App.Persistencia
             return null;
 
         }
+       void IRepositorioEstacion.AsignarDato(string codigoEstacion,DataMeteorologico dato)
+        {
+            var estacionEncontrada=_appContext.Estaciones.FirstOrDefault(p=> p.Codigo==codigoEstacion);
+           if (estacionEncontrada != null)
+            {
+               
+               estacionEncontrada.DatosMeteorologicos=new List<DataMeteorologico>
+               {
+                   new DataMeteorologico{Id=dato.Id,FechaDato=dato.FechaDato,Temperatura=dato.Temperatura,Humedad=dato.Humedad,PresionAtmosferica=dato.PresionAtmosferica,VelocidadViento=dato.VelocidadViento,Pluviosidad=dato.Pluviosidad},
+               };
+               _appContext.SaveChanges();
+              
+            }
+        }
+        
     }
 }

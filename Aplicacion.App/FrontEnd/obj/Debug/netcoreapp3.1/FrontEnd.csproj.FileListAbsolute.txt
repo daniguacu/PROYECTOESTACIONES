@@ -231,3 +231,4 @@ C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\Front
 C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstMet\ConsultarDatosMet.cshtml.g.cs
 C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstMet\IngresarDatos.cshtml.g.cs
 C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\IngresarReporte.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\EditarReporte.cshtml.g.cs

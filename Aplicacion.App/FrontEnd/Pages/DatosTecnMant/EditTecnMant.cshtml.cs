@@ -11,16 +11,26 @@ namespace FrontEnd.Pages
 {
     public class EditTecnMantModel : PageModel
     {
-        public static TecnicoMantenimiento tecnico = new TecnicoMantenimiento();
+        [BindProperty]
+        public TecnicoMantenimiento tecnico{get;set;}
+      
+        [TempData]
+
+        public int numero{get;set;}
+      
+    
         public static IRepositorioTecnicoMantenimiento _repoTecnico = new RepositorioTecnicoMantenimiento(new Aplicacion.App.Persistencia.AppContext());
 
         public void OnGet()
         {
         }
 
-        // POST (corto)
-        public void OnPost(TecnicoMantenimiento tecnico){
-            _repoTecnico.UpdateTecnicoMantenimiento(tecnico);
+       
+        public void OnPost(){
+            tecnico=_repoTecnico.GetTecnicoMantenimiento(tecnico.Identificacion);
+            numero=tecnico.Id;
+            if(numero!=0){
+            _repoTecnico.UpdateTecnicoMantenimiento(tecnico);}
         }
     }
 }

@@ -12,13 +12,13 @@
 </div>
 
 <form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
-    <p><label>Identificación</label><input type="text" id="idTecMant" class="form-control" name="persona.Identificacion"></p>
-    <p><label>Nombre(s)</label><input type="text" id="nombreTecMant" class="form-control" name="persona.Nombre"></p>
-    <p><label>Apellido(s)</label><input type="text" id="apellidoTecMant" class="form-control" name="persona.Apellido"></p>
-    <p><label>Tarjeta Profesional</label><input type="text" id="TarjetaProfesional" class="form-control" name="TarjetaProfesional"></p>
+    <p><label>Identificación</label><input type="text" asp-for="@Model.tecnico.Identificacion"id="identificacion" class="form-control" placeholder="Identificacion" ><p>
+    <p><label>Nombre(s)</label><input type="text" asp-for="@Model.tecnico.Nombre"id="nombre" class="form-control" placeholder="Nombre" ><p>
+    <p><label>Apellido(s)</label><input type="text" asp-for="@Model.tecnico.Apellido"id="apellido" class="form-control" placeholder="apellido" ><p>
+    <p><label>Tarjeta Profesional</label><input type="text"asp-for="@Model.tecnico.TarjetaProfesional"id="tarjeta" class="form-control" placeholder="TarjetaProfesional" ><p>
     <p><label>Genero</label>
         <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example"
-            name="persona.Genero">
+            asp-for="@Model.tecnico.Genero">
             <option selected>Seleccionar</option>
             <option value="Hombre">Hombre</option>
             <option value="Mujer">Mujer</option>
@@ -27,7 +27,7 @@
     </p>
     <p><label>Estado de la cuenta</label>
         <select class="form-control form-select form-select-lg mb-3" aria-label=".form-select-lg example"
-            name="persona.Estado">
+            asp-for="@Model.tecnico.Estado">
             <option selected>Seleccionar</option>
             <option value="A">Activo</option>
             <option value="I">Inactivo</option>
