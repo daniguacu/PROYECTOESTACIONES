@@ -1,0 +1,23 @@
+@page
+@model Aplicacion.App.FrontEnd.InicioAdmin2Model
+@{
+    ViewData["Title"] = "Administrador";
+}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Acceso Solo para el Administrador</p>
+</div>
+
+<section id="IniAdminCont">
+    
+    <form method="POST">
+        <p><label>INGRESA TU IDENTIFICACION</label><input asp-for="@Model.administrador.Identificacion"class="form-control" placeholder="Identificacion"><p>
+        <p><label>INGRESA TU CONTRASEÑA</label><input asp-for="@Model.administrador.Password" class="form-control" placeholder="contraseña"><p>
+        <h1>@Model.nombre</h1> 
+        <input type="submit" value="Ingresar" asp-page-handler="Ingresar">     
+    </form>
+
+
+    
+</section>

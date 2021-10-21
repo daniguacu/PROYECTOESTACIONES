@@ -36,10 +36,15 @@ namespace Aplicacion.App.Persistencia
         {
             var reporteEncontrada = _appContext.Reporte.FirstOrDefault(p => p.Id == reporte.Id);
             if (reporteEncontrada != null) {
-                //personaEncontrada.Identificacion = persona.Identificacion
+                reporteEncontrada.Id = reporte.Id;
                 reporteEncontrada.Descripcion = reporte.Descripcion;
                 
                 _appContext.SaveChanges();
+                Console.WriteLine("[Reporte] > Updated\n" + 
+                              "  {\n" + 
+                              "    Descripcion: " + reporteEncontrada.Descripcion + ",\n" + 
+                              
+                              "  }");
             }
             return reporteEncontrada;
         }

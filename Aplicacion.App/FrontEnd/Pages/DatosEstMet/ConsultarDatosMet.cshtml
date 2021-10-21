@@ -11,14 +11,8 @@
 </div>
 
 <form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
-    <p><label>INGRESE ID DEL DATO</label> <input type="text" id="iddato" class="form-control" name="iddato"></p>
+    <p><label>INGRESE EL ID DEL DATO</label> <input type="text"  asp-for="@Model.dato.Id" id="codigoestacion" class="form-control" ></p>
     <input type="submit"class="w-100 btn btn-lg btn-outline-primary" value="Consultar">
-    
-    <p><label> FECHA </label> <input type="datetime" id="fechaDato" class="form-control" name="datometeorologico.FechaDato"></p>
-    <p><label> TEMPERATURA </label> <input type="text" id="tipoDato" class="form-control" name="datometeorologico.TipoDato"></p>
-    <p><label> PLUVIOSIDAD </label> <input type="text" id="tipoDato" class="form-control" name="datometeorologico.TipoDato"></p>
-    <p><label> RADIACION </label> <input type="text" id="tipoDato" class="form-control" name="datometeorologico.TipoDato"></p>
-    <p><label> HUMEDAD </label> <input type="text" id="tipoDato" class="form-control" name="datometeorologico.TipoDato"></p>
      
     
     
@@ -26,3 +20,11 @@
     
     <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
 </form>
+<h1>PLUVIOSIDAD</h1>
+<h1>@Model.Pluviosidad
+<h1>HUMEDAD</h1>
+<h1>@Model.Humedad</h1>
+<h1>TEMPERATURA</h1>
+<h1>@Model.Temperatura</h1>
+<h1>RADIACION</h1>
+<h1>@Model.Radiacion</h1>

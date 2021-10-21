@@ -2,6 +2,8 @@ using System;
 using System.Linq;
 using Aplicacion.App.Dominio;
 using System.Collections.Generic;
+using Microsoft.EntityFrameworkCore;
+
 
 namespace Aplicacion.App.Persistencia
 {
@@ -47,7 +49,15 @@ namespace Aplicacion.App.Persistencia
                 estacionEncontrada.Tecnico=estacion.Tecnico;
                 estacionEncontrada.Reporte=estacion.Reporte;
                 _appContext.SaveChanges();
-                Console.WriteLine("[Estacion] > Updated");
+                Console.WriteLine("[Estacion] > Updated\n" + 
+                              "  {\n" + 
+                              "    Id: " + estacionEncontrada.Id + ",\n" + 
+                              "    Codigo: " + estacionEncontrada.Codigo + ",\n" + 
+                              "    Municipio: " + estacionEncontrada.Municipio + ",\n" +
+                              "    Latitud: " + estacionEncontrada.Latitud + ",\n" + 
+                              "    Longitud: " + estacionEncontrada.Longitud + ",\n" + 
+                              "    FechaMontaje: " + estacionEncontrada.FechaMontaje + ",\n" + 
+                              "  }");
             }
             return estacionEncontrada;
         }
@@ -93,6 +103,7 @@ namespace Aplicacion.App.Persistencia
             return null;
 
         }
+        
        void IRepositorioEstacion.AsignarDato(string codigoEstacion,DataMeteorologico dato)
         {
             var estacionEncontrada=_appContext.Estaciones.FirstOrDefault(p=> p.Codigo==codigoEstacion);
@@ -106,6 +117,19 @@ namespace Aplicacion.App.Persistencia
                _appContext.SaveChanges();
               
             }
+        }
+        TecnicoMantenimiento IRepositorioEstacion.GetTecnico(string codigoEstacion){
+            var estacionEncontrada=_appContext.Estaciones.Where(p=> p.Codigo==codigoEstacion).Include(p=>p.Tecnico).FirstOrDefault();
+            return estacionEncontrada.Tecnico;
+        }
+
+        List<DataMeteorologico> IRepositorioEstacion.GetDato(string codigoEstacion){
+            var estacionEncontrada=_appContext.Estaciones.Where(p=> p.Codigo==codigoEstacion).Include(p=>p.DatosMeteorologicos).FirstOrDefault();
+            return estacionEncontrada.DatosMeteorologicos;
+        }
+        Reporte IRepositorioEstacion.GetReporte(string codigoEstacion){
+            var estacionEncontrada=_appContext.Estaciones.Where(p=> p.Codigo==codigoEstacion).Include(p=>p.Reporte).FirstOrDefault();
+            return estacionEncontrada.Reporte;
         }
         
     }

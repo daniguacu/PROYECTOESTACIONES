@@ -143,6 +143,34 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.ToTable("Reporte");
                 });
 
+            modelBuilder.Entity("Aplicacion.App.Dominio.Validacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Val")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Validaciones");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.Administrador", b =>
+                {
+                    b.HasBaseType("Aplicacion.App.Dominio.Persona");
+
+                    b.Property<int>("Password")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Rol")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("Administrador");
+                });
+
             modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>
                 {
                     b.HasBaseType("Aplicacion.App.Dominio.Persona");

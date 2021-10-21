@@ -15,9 +15,13 @@ namespace FrontEnd
     {
         private static IRepositorioPersona _repoPersona = new RepositorioPersona(new Aplicacion.App.Persistencia.AppContext());
         private static IRepositorioDataMeteorologico _repodatos= new RepositorioDataMeteorologico(new Aplicacion.App.Persistencia.AppContext());
+        public static IRepositorioAdministrador _repoAdministrador= new RepositorioAdministrador(new Aplicacion.App.Persistencia.AppContext());
+        public static IRepositorioValidacion _repoValidacion= new RepositorioValidacion(new Aplicacion.App.Persistencia.AppContext());
         public static void Main(string[] args)
         {
             CreateHostBuilder(args).Build().Run();
+            InsertarAdministrador();
+            InsertarValidacion();
 
             // Console.WriteLine("[FrontEnd] Inicio de Pruebas!");
             // InsertarPersona();
@@ -35,6 +39,7 @@ namespace FrontEnd
             };
             _repoPersona.AddPersona(p);
         }
+        
          private static void InsertarDato()
         {
             var p=new DataMeteorologico
@@ -51,6 +56,28 @@ namespace FrontEnd
                 //TipoDato=Enum.GetName(typeof(MyType),MyType.humedad)
             };
             _repodatos.AddDato(p);
+        }
+        private static void InsertarAdministrador()
+        {
+            var p=new Administrador
+            {
+                Identificacion="1111",
+                Nombre="Claudia Elizabeth",
+                Apellido="Navarro",
+                Genero="Femenino",
+                Estado='A',
+                Password=12345,
+                Rol="Admin de perfiles"
+            };
+            _repoAdministrador.AddAdministrador(p);
+        }
+        private static void InsertarValidacion()
+        {
+            var p=new Validacion
+            {
+                Val=0
+            };
+            _repoValidacion.AddValidacion(p);
         }
 
         public static IHostBuilder CreateHostBuilder(string[] args) =>

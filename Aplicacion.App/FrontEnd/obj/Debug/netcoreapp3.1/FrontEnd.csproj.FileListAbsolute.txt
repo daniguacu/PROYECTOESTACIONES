@@ -232,3 +232,9 @@ C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\Front
 C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstMet\IngresarDatos.cshtml.g.cs
 C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\IngresarReporte.cshtml.g.cs
 C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\EditarReporte.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstMet\ConsultarEst.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\ConsultarReporte.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosEstMet\InicioAdmin.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\InicioAdmin2.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\InicioTecnico.cshtml.g.cs
+C:\Users\Daniela Guzman\Documents\GitHub\PROYECTOESTACIONES\Aplicacion.App\FrontEnd\obj\Debug\netcoreapp3.1\Razor\Pages\DatosTecnMant\Reporte.cshtml.g.cs

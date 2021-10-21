@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Aplicacion.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211017180130_Inicial")]
+    [Migration("20211020223937_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -143,6 +143,34 @@ namespace Aplicacion.App.Persistencia.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Reporte");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.Validacion", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<int>("Val")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Validaciones");
+                });
+
+            modelBuilder.Entity("Aplicacion.App.Dominio.Administrador", b =>
+                {
+                    b.HasBaseType("Aplicacion.App.Dominio.Persona");
+
+                    b.Property<int>("Password")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Rol")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasDiscriminator().HasValue("Administrador");
                 });
 
             modelBuilder.Entity("Aplicacion.App.Dominio.TecnicoMantenimiento", b =>

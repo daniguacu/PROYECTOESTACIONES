@@ -27,10 +27,12 @@ namespace FrontEnd.Pages
 
        
         public void OnPost(){
-            tecnico=_repoTecnico.GetTecnicoMantenimiento(tecnico.Identificacion);
-            numero=tecnico.Id;
-            if(numero!=0){
-            _repoTecnico.UpdateTecnicoMantenimiento(tecnico);}
+            Console.WriteLine("___________");
+            var tecnicoEncontrado = _repoTecnico.GetTecnicoMantenimiento(tecnico.Identificacion);
+            numero = tecnicoEncontrado.Id;
+            if(numero != 0) {
+                _repoTecnico.UpdateTecnicoMantenimiento(tecnico);
+            }
         }
     }
 }

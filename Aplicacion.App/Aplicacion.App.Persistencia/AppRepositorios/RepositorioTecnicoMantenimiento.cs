@@ -30,6 +30,19 @@ namespace Aplicacion.App.Persistencia
                 tecnicoEncontrado.TarjetaProfesional=tecnicoMantenimiento.TarjetaProfesional;
                 tecnicoEncontrado.Reporte=tecnicoMantenimiento.Reporte;
                  _appContext.SaveChanges();
+                 
+                Console.WriteLine("[Tecnico] > Updated\n" + 
+                              "  {\n" + 
+                              "    Id: " + tecnicoEncontrado.Id + ",\n" + 
+                              "    Identificacion: " + tecnicoEncontrado.Identificacion + ",\n" + 
+                              "    Nombre: " + tecnicoEncontrado.Nombre + ",\n" +
+                              "    Apellido: " + tecnicoEncontrado.Apellido + ",\n" + 
+                              "    Genero: " + tecnicoEncontrado.Genero + ",\n" + 
+                              "    Estado: " + tecnicoEncontrado.Estado + ",\n" + 
+                              //"    Discriminator: " + tecnicoEncontrado.Discriminator + ",\n" + 
+                              "    TarjetaProfesional: " + tecnicoEncontrado.TarjetaProfesional + ",\n" + 
+                              "    Reporte: " + tecnicoEncontrado.Reporte + ",\n" + 
+                              "  }");
             }
             return tecnicoEncontrado;
         }

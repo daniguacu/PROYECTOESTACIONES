@@ -21,6 +21,19 @@ namespace Aplicacion.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Validaciones",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Val = table.Column<int>(type: "int", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Validaciones", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Personas",
                 columns: table => new
                 {
@@ -32,6 +45,8 @@ namespace Aplicacion.App.Persistencia.Migrations
                     Genero = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Estado = table.Column<string>(type: "nvarchar(1)", nullable: false),
                     Discriminator = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Password = table.Column<int>(type: "int", nullable: true),
+                    Rol = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     TarjetaProfesional = table.Column<int>(type: "int", nullable: true),
                     ReporteId = table.Column<int>(type: "int", nullable: true)
                 },
@@ -128,6 +143,9 @@ namespace Aplicacion.App.Persistencia.Migrations
         {
             migrationBuilder.DropTable(
                 name: "DatoMeteorologico");
+
+            migrationBuilder.DropTable(
+                name: "Validaciones");
 
             migrationBuilder.DropTable(
                 name: "Estaciones");

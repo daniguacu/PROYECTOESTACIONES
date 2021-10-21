@@ -1,0 +1,26 @@
+@page
+@model FrontEnd.Pages.ConsultarReporteModel
+
+@{
+    ViewData["Title"] = "Consultar Reporte";
+}
+
+<div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
+    <h1 class="" style="font-weight: 300">@ViewData["Title"]</h1>
+    <p class="lead">Consulta el reporte</p>
+</div>
+
+<form method="POST" action="" style="display: grid; gap: 10px; max-width: 500px; margin: auto">
+    <p><label>INGRESE EL CODIGO DE LA ESTACION</label> <input type="text"  asp-for="@Model.estacion.Codigo" id="codigoestacion" class="form-control" ></p>
+    <input type="submit"class="w-100 btn btn-lg btn-outline-primary" value="Consultar">
+     
+    
+    
+    
+    
+    <a type="button" class="w-100 btn btn-lg btn-primary" asp-area="" asp-page="./EstMet">Regresar</a>
+</form>
+<h1>Descripcion</h1>
+<h1>@Model.Descripcion</h1>
+<h1>ID</h1>
+<h1>@Model.Id</h1>

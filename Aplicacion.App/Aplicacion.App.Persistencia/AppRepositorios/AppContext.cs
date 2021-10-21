@@ -9,11 +9,12 @@ namespace Aplicacion.App.Persistencia
         public DbSet<Dominio.Estacion> Estaciones{get;set;}
         public DbSet<DataMeteorologico> DatoMeteorologico{get;set;}
         public DbSet<TecnicoMantenimiento> Tecnicos{get;set;}
-        public DbSet<Dominio.Reporte> Reporte{get;set;}
+        public DbSet<Administrador> Administradores{get;set;}
+        public DbSet<Validacion> Validaciones{get;set;}        public DbSet<Dominio.Reporte> Reporte{get;set;}
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) {
             if (!optionsBuilder.IsConfigured) {
-                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=aplicacion5DB");
+                optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB; Initial Catalog=aplicacion10DB");
                 //conexion a azure data studio (LocalDb)\MSSQLLocalDB
             }
 
